@@ -1,14 +1,32 @@
 ## A* And BFS Search Algorithms
-### Assignment Question
-Suppose we want to travel from one Iranian city center to another Iranian city center.<br>
-we want to find a sequence of cities that cover the shortest distance from the origin to the destination. <br>
-Write a program in Python and show the provincial centers that should be visited in order and the length of the route found by your algorithm. <br>
 
-To do this, use the A*,BFS search algorithms.
+### What is a search Algorithm?
+- <img width="70%" src="https://cdn1.byjus.com/wp-content/uploads/2022/07/search-algorithms.png"/>
+- In the world of computer science, a search algorithm is a technique which helps in solving the search problem.
+- These types of algorithms work to recover info stored within some data structure.
+- In simple words, we can say that search algorithms are created to inspect for an item or retrieve an item from any data structure where it is kept.
+- These algorithms are divided into two groups based on the search operations
+- **Informed search algorithms**
+  - these Algorithms use a heuristic function that estimates how close a state is to the goal state.
+  - and prioritize the states that are more promising.
+  - Informed search algorithms are also called heuristic search algorithms.
+  - they are more efficient and goal-directed than blind search algorithms.
+- **Blind search algorithms**
+  - do not use any additional information other than the problem definition.
+  - they cannot differentiate between states that are closer or farther from the goal state.
+  - Blind search algorithms are also called uninformed search algorithms.
+  - they are less efficient and more computationally expensive than informed search algorithms.
+  - Examples of blind search algorithms include Breadth-First search, Depth-First search, and Depth-Limited search.
+### Assignment Question
+- Suppose we want to travel from one Iranian city center to another Iranian city center.
+- we want to find a sequence of cities that cover the shortest distance from the origin to the destination.
+- Write a program in Python and show the provincial centers that should be visited in order and the length of the route found by your algorithm.
+
+- To do this,we use the A*,BFS search algorithms.
 ### Assignment Asnwer
 ### Formulating the goal
-Finding a sequence of cities that have the shortest distance from the origin city to the destination city.<br>
-Whenever we want to turn any kind of problem into a search problem, we need to define six things:
+- Finding a sequence of cities that have the shortest distance from the origin city to the destination city.
+- Whenever we want to turn any kind of problem into a search problem, we need to define six things:
 1. A collection of all the states we may end up in
 2. Start and end mode
 3. A termination check (a way to check if we're in a done state)
@@ -125,12 +143,12 @@ As can be seen in the output of the program, in traveling the distance between <
 <p><img src="output_results.png" width="500" /></p>
 
 #### BFS Search
-  *	It is an unconscious search method.
+  *	It is an blind search method.
   *	It is complete if the branching coefficient is limited and it is optimal if the cost of each step is equal, then it is not optimal here where the costs are different.
   *	Time complexity and space complexity<br>  Because in this implementation, the node becomes the target after creating the test, so the time and space complexity are both O(b^d).
 
 #### A* Search 
-  *	It is a conscious search method.
+  *	It is a informed search method.
   <br> (When expanding vertices, we can use the knowledge we have and check which vertices are superior to other vertices for expansion)
   *	Unlike searching for the BFS, we use an evaluation function f(n).
 
